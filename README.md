@@ -3,7 +3,6 @@ PoC to collect coverage data from Unit Tests, API tests and QA manual tests.
 
 See https://medium.com/@cjayawickrema/approach-to-calculate-java-code-coverage-with-test-pyramid-30535aff7af5
 
-
 ## Some experiments to try
 
 ### 1. Clone the other repo https://github.com/xpepper/jacoco-server:
@@ -16,7 +15,10 @@ $jacoco-server> mvn clean package
 $jacoco-server> java -jar target/jacoco-server-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
 ### 3. Run the tests of this application
+
+```shell script
 $coverage-test> mvn clean verify
+```
 
 ### 4. Run the application with the JaCoCo agent
 This will run the app and connect the JaCoCo agent to the JaCoCo server (which runs on port 6300)
